@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rafael.supermercado.PesquisaProdutos"
+    android:onClick="buscarWs">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPesquisaProduto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Digite aqui sua pesquisa"
+        android:layout_toLeftOf="@+id/btnPesquisar"
+        android:layout_toStartOf="@+id/btnPesquisar"
+        android:editable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesquisar"
+        android:id="@+id/btnPesquisar"
+        android:layout_alignBottom="@+id/txtPesquisaProduto"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="buscarWs" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lstPesquisaProduto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnVerCarrinho"
+        android:layout_below="@+id/txtPesquisaProduto"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver carrinho"
+        android:id="@+id/btnVerCarrinho"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/lstPesquisaProduto"
+        android:layout_alignStart="@+id/lstPesquisaProduto"
+        android:onClick="carrinho" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar compra"
+        android:id="@+id/btnFinalizar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/lstPesquisaProduto"
+        android:layout_alignEnd="@+id/lstPesquisaProduto"
+        android:onClick="gravarCarrinho" />
+
+</RelativeLayout>

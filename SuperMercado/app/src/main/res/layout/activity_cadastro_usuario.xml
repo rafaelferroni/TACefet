@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Registre-se:"
+        android:id="@+id/lblRegitrese"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignBottom="@+id/txtConfirmarEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </ScrollView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNomeUsuario"
+        android:text="Usuário"
+        android:editable="true"
+        android:inputType="text"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/lblRegitrese"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSenhaLogin"
+        android:text="Senha"
+        android:editable="true"
+        android:layout_alignParentStart="true"
+        android:inputType="text"
+        android:layout_below="@+id/txtNomeUsuario"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtConfirmarSenha"
+        android:text="Confirme sua senha"
+        android:editable="true"
+        android:inputType="text"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtSenhaLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNome"
+        android:text="Nome Completo"
+        android:editable="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtConfirmarSenha"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCpf"
+        android:text="CPF"
+        android:editable="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtNome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtEmail"
+        android:text="Email"
+        android:editable="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtCpf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtConfirmarEmail"
+        android:text="Confirme seu email"
+        android:editable="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Salvar"
+        android:id="@+id/btnSalvar"
+        android:layout_alignParentBottom="true"
+        android:onClick="cadastrarUsuario"
+        android:layout_toRightOf="@+id/scrollView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTelefone"
+        android:layout_below="@+id/txtConfirmarEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Telefone" />
+
+</RelativeLayout>
